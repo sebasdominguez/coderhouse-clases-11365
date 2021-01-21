@@ -1,0 +1,10 @@
+.contItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 35px;
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 7px;
+}
