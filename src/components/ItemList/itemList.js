@@ -1,27 +1,27 @@
 import React from 'react'
-import ButtonCL from '../Button/ButtonContainer'
-import { ItemDetail } from '../ItemDetail/ItemDetail'
+import { ItemDetail } from '../Item/ItemDetail/ItemDetail'
 import './itemList.css'
 
-export const ItemList = ({greeting}) => {
-
-    let buttonText = 'SOY UN BOTON'
+export const ItemList = () => {
 
     const items = [
         {
             id: 1,
             title: "Producto 1",
-            price: 245
+            price: 245,
+            stock: 10
         },
         {
             id: 2,
             title: "Producto 2",
-            price: 120
+            price: 120,
+            stock: 7
         },
         {
             id: 3,
             title: "Producto 3",
-            price: 178
+            price: 178,
+            stock: 9
         }
     ]
 
@@ -33,7 +33,6 @@ export const ItemList = ({greeting}) => {
                     return <ItemDetail key={item.id} item={item}/>
                 })
             }
-            <ButtonCL name={buttonText}/>
         </div>
     )
 }

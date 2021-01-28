@@ -6,7 +6,7 @@ class ButtonCL extends React.Component{
     constructor(props){
         super(props)
         this.state = {
-            textBotonCl: this.props.name
+            qty: this.props.qty
         }
     }
 
@@ -16,7 +16,7 @@ class ButtonCL extends React.Component{
 
     render(){
         return(
-            <Button text={this.state.textBotonCl} handleState={()=>this.handleState()} />
+            <Button cantidad={this.state.qty} handleState={()=>this.handleState()} />
         )
     }   
 }

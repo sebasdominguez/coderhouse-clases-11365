@@ -1,13 +1,13 @@
 import React from 'react'
 
-const Button = ({text, children, handleState}) => {
+const Button = ({cantidad, children, handleState}) => {
 
     return (
         <React.Fragment>
-            { text && 
+            { cantidad && 
                 <>
                     <button onClick={handleState} style={ { borderRadius: '7px', backgroundColor: 'green'} } > 
-                        {text}
+                        Comprar: {cantidad}u.
                     </button> 
                     { children && children }
                 </>

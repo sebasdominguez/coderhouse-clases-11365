@@ -1,0 +1,32 @@
+.count{
+    display: flex;
+    flex-direction: row;
+    color: black;
+    align-items: center;
+}
+
+.contador{
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+.btn-disabled{
+    cursor: not-allowed !important;
+    background-color: #d3c7c8;
+    border-color: #d3c7c8;
+}
+
+.btn-disabled:hover{
+    cursor: not-allowed !important;
+    background-color: #8d7f80;
+    border-color: #8d7f80;
+}
+
+.btn-success:focus, .btn-success.focus,
+.btn-danger:focus, .btn-danger.focus {
+    color: #fff;
+    background-color: #db4371;
+    border-color: #db4371;
+    box-shadow: 0 0 0 0.2rem rgb(240, 182, 195);
+}

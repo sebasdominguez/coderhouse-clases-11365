@@ -1,9 +1,12 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import Boton from '../Button/Button'
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap'
+import { CartContext } from '../../cartContext'
 import './navbar.css'
 
 export const NavBar = () => {
+
+    const [contador, setContador] = useContext(CartContext)
 
     return (
         <Navbar collapseOnSelect fixed="top" expand="lg" bg="dark" variant="dark" className="pl-5 pr-5">
@@ -23,7 +26,7 @@ export const NavBar = () => {
                     </Nav>
                     <Nav>
                         <Nav.Link eventKey={2}>
-                            CART
+                            CART {contador}
                         </Nav.Link>
                         <Boton text={'NAV BUTTON'} />
                     </Nav>
